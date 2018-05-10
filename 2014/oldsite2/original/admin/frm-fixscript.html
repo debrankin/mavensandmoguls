@@ -1,0 +1,58 @@
+<!-- rev 07/20/2000 -->
+
+<html>
+
+<head>
+
+<meta author="Guangbin Liu">
+
+<script language="JavaScript">
+<!--
+function cancel()
+{
+parent.fraMain.location = "./disclaimer.html";
+}
+// -->
+</script>
+
+</head>
+
+<body TEXT="#000000" LINK="#0000FF" bgcolor="#FFFFFF">
+
+<form name="frmMain" action="/adminpage/admin-request" method="post">
+<br>
+<font face="sans-serif">
+The Fix Scripts function will set the permission for all your files<br>
+under /cgi-bin and its subdirectories into 755, and set the correct<br>
+file ownership for these files. It should fix most of your cgi script<br>
+problem. Are you sure that you want to fix your scripts? </font>
+<br>
+<br>
+<center><input type="button" value="Yes, Fix Scripts" onclick="document.frmMain.submit();"></center><br>
+<center><input type="button" value="No, Fix it later" onclick="cancel();">
+	<input type="hidden" name="function" value="FIXSCRIPT">
+	<script>
+	<!--
+	document.write('<input type="hidden" name="name" value="' + parent.fraHeader.document.frmLogin.username.value + '">');
+        document.write('<input type="hidden" name="passwd" value="' + parent.fraHeader.document.frmLogin.password.value + '">');
+	// -->
+	</script>
+	
+</form>
+
+<script language="JavaScript">
+<!--
+	if ( ( parent.fraHeader.document.frmLogin.username.value == '' ) ||
+		 ( parent.fraHeader.document.frmLogin.password.value == '' ))
+	{
+		alert('You must set your login information\nbefore using any functions.');
+		parent.fraHeader.loadForm('login');
+	}
+// -->
+</script>
+
+</center>
+
+</body>
+
+</html>

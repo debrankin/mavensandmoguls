@@ -1,0 +1,61 @@
+<!-- rev 98.08.17 -->
+
+<html>
+
+<head>
+
+<meta author="Stephen C. Majewski">
+
+<style>
+<!--
+	a:link {color: 0000FF; text-decoration: none}
+	a:visited {color: 0000FF; text-decoration: none}
+	a:hover {color: A00000; text-decoration: underline}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+<font size=2 face="sans-serif">
+
+<a name="overview"><hr><center><font size=1>[<b>Overview</b>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+This function allows you to change or remove the bounce/reply-to mail address
+for the administrator or your user. The bounce or reply-to email for the
+administrator or your users will be sent to this new address.
+
+<br><br>
+
+<a name="fields"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<b>Fields</b>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+<b>User Name:</b> (<i>Required</i>)The Username whose bounce/reply-to address will be changed/removed, you can select from a list. 
+<br><br>
+<b>Bounce/Reply-to</b>:(<i>Required</i>)New Bounce/Reply-to address for your selected username. 
+<br><br>
+
+<a name="notes"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<b>Notes</b>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+When you change the username, the old bounce/reply-to email address for this user will be displayed in the Bounce/Reply-to filed.
+<a name="samples"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<b>Samples</b>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+<b>Change/Remove Bounce/Reply-to Address:</b>
+<pre><font size=2 face="courier">      
+      User Name: usr100
+Bounce/Reply-to: yourname@yourdomain.com
+</font></pre>
+
+<br>
+
+<a name="errors"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<b>Errors</b>]</font></center><hr>
+<b>Invalid Email address to change</b> -
+	This means the email address provided is not valid, valid email consists of @, letter, digit and -.
+<br><br>
+<b>Administrative password is invalid</b> -
+	This means the is not correct.dministrative password is not correct.
+	Click <i>SetLogin</i> to input correct administreative password.
+<br><br>
+
+<hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+
+</font>
+
+</body>
+
+</html>

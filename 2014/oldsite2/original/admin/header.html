@@ -1,0 +1,153 @@
+<!-- rev 07/20/2000 -->
+
+<html>
+<head>
+
+<meta author="Guangbin Liu">
+	
+<script language="JavaScript">
+<!--
+function getCookie(Name)
+{
+	var search = Name + "="
+
+	if (document.cookie.length > 0)
+	{
+		// if there are any cookies
+		offset = document.cookie.indexOf(search)
+		if (offset != -1)
+		{
+			// if cookie exists
+			offset += search.length
+			// set index of beginning of value
+			end = document.cookie.indexOf(";", offset)
+			// set index of end of cookie value
+			if (end == -1)
+				end = document.cookie.length
+			return unescape(document.cookie.substring(offset, end))
+		}
+	}
+}
+function logout()
+{
+parent.fraHeader.document.frmLogin.password.value = '';
+parent.fraHeader.document.frmLogin.username.value = '';
+top.location='/';
+}
+
+function loadForm( inSelection )
+{
+	if ( inSelection != "none" )
+	{
+		if ( inSelection != "webtrends" )
+		{
+			parent.fraMain.location         = "./frm-" + inSelection + ".html";
+			parent.fraInstructions.location = "./ins-" + inSelection + ".html";
+		}
+		else
+		{
+			window.open("https://report.registeredsite.com",'Webtrends','toolbar=no,location=no,directories=no,status=yes,menubar=no,resizable=no,copyhistory=no,scrollbars=yes,width=640,height=560');
+		}
+	}
+}
+// -->
+</script>
+
+</head>
+
+<body bgcolor="#D8D198" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000" leftmargin=10 topmargin=10>
+
+<table border=0 width=620>
+<tr>
+	<td width=150 align="center" valign="middle">
+		<font face="sans-serif">
+			<a href="http://www.redhat.com" target="_top"
+				onmouseout="window.status='';"
+				onmouseover="window.status=':::::::::: RedHat HomePage ::::::::::';">
+				<img src="logo.gif"	border=0 alt="RedHat's HomePage" width=70 height=67 border=0 align="left"></a>
+			<br><font size=6>UNIX</font>
+			<br>
+			Administration Page<br>
+		</font>
+	</td>
+	<td align="center" valign="middle">
+		<form name="selecter">
+ 				<select name="select1" size=1
+				onchange="loadForm(document.selecter.select1.options[document.selecter.select1.selectedIndex].value)">
+				<option value=none>Select a Function
+				<option value=none>----------------------------------------
+				<option value="password">  Change Password
+				<option value="user">      Create/Delete User
+				<option value="update">    Update Admin Page
+				<option value="email">	   Change Bounce/Reply-to Address
+				<option value="server">	  Change Server Admin Email
+				<option value="frontpage"> Install/Uninstall FrontPage Extensions
+				<option value="fpuser">   Manage Frontpage Users
+				<option value="formmail">  Install FormMail
+				<option value="permission">Reset Permission
+				<option value="fixscript"> Fix Scripts
+				<option value="set">       Set .htaccess
+				<option value="usage">     Disk Usage
+				<option value="traffic">   Display Daily and Monthly Transfer
+				<option value="error">	Display Error Message 
+				<option value="webtrends"> WebTrends NOW!
+			</select>
+			<input type="button" value="GO"
+				onclick="loadForm(document.selecter.select1.options[document.selecter.select1.selectedIndex].value)">
+			&nbsp;
+		</form>
+			<font face="sans-serif" size=3>
+		<a href="javascript:loadForm('login')">Set Login</a> <br><br>
+            <a href="javascript:logout()">Log Out</a>
+			</font>
+	</td>
+	<td align="right" valign="bottom">
+		<font face="sans-serif" size=1">
+			<i>&copy; 1999, 2000<br>
+			All Rights Reserved</i>
+		</font>
+	</td>
+</tr>
+</table>
+
+<form name="frmLogin">
+	<script>
+	<!--
+		document.write('<input type="hidden" name="username" value="'
+			+ ( ( getCookie("ILUAPUserName") == null ) ? "" : getCookie("ILUAPUserName") )
+			+ '">');
+		document.write('<input type="hidden" name="email" value="'
+			+ ( ( getCookie("ILUAPEmail") == null ) ? "" : getCookie("ILUAPEmail") )
+			+ '">');
+	// -->
+	</script>
+	<input type="hidden" name="password" value="">
+	<input type="hidden" name="userdir" value="">
+	<input type="hidden" name="users" value="">
+	<input type="hidden" name="aliaslist" value="">
+	<input type="hidden" name="subusers" value="">
+	<input type="hidden" name="fpusers" value="">
+	<input type="hidden" name="rolelist" value="">
+	<input type="hidden" name="htmldirs" value="">
+	<input type="hidden" name="serveradmin" value="">
+	<input type="hidden" name="virtualhost" value="">
+	<input type="hidden" name="ftpstats" value="">
+	<input type="hidden" name="adminpagestats" value="">
+	<input type="hidden" name="serverip" value="">
+</form>
+
+<script>
+<!--
+	if ( ( parent.fraHeader.document.frmLogin.username.value == '' ) ||
+		 ( parent.fraHeader.document.frmLogin.password.value == '' ) ||
+		 ( parent.fraHeader.document.frmLogin.email.value == '' ) )
+	{
+		alert('You must set your login information\nbefore using any functions.');
+		parent.fraHeader.loadForm('login');
+	}
+// -->
+</script>
+
+</body>
+
+</html>

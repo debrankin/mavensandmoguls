@@ -1,0 +1,90 @@
+<!-- rev 98.08.17 -->
+
+<html>
+
+<head>
+
+<meta author="Stephen C. Majewski">
+
+<style>
+<!--
+	a:link {color: 0000FF; text-decoration: none}
+	a:visited {color: 0000FF; text-decoration: none}
+	a:hover {color: A00000; text-decoration: underline}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+<font size=2 face="sans-serif">
+
+<a name="overview"><hr><center><font size=1>[<b>Overview</b>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+This function allows you to create and delete frontpage users. You can let your users login your web server using Frontpage Software. 
+<br><br>
+Your created frontpage user only applied for frontpage software, you can't ftp or telnet to your server using this user;
+<br><br>
+
+<a name="fields"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<b>Fields</b>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+<b>Create User:</b> Input the new username you want to create and then you will need to click the radio button choice at the left of <i>Create User</i>.
+<br><br>
+<b>Delete User:</b> Delete the user you created, you can select from a user list which are created by you. The <i>Delete User</i> field won't appear if you have no users to delete. and you'll need to click the radio choice at the left of Delete User.  
+<br><br>
+<b>Password:</b> (<i>Required</i>) This field is for setting the password for the user you are creating.
+<br><br>
+<b>Confirm:</b> (<i>Required</i>) This field is for confirming the password.
+<br><br>
+<b>Role:</b> (<i>Required</i>) This field is for specifying the permssion for your users.<P>
+<UL>
+<LI><B>Administrator</B>  View, add, and change all server content; manage server settings and accounts.  
+<LI><B>Advanced author</B> View, add, and change pages, documents, themes, and borders; recalculate hyperlinks.  
+<LI><B>Author</b> View, add, and change pages and documents.  
+<LI><B>Browser</B> View pages and documents. 
+</UL> 
+<br>
+
+<a name="notes"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<b>Notes</b>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+Your created frontpage user only applied for frontpage software, you can't ftp or telnet to your server using this user
+<br><br>
+<a name="samples"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<b>Samples</b>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+<b>Creating a user:</b>
+<pre><font size=2 face="courier">  
+      User Name:  rsmith
+       Password:  lament
+        Confirm:  lament
+           Role:  Administrator
+</font></pre>
+<br>
+
+<a name="errors"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<b>Errors</b>]</font></center><hr>
+<b>Invalid user name</b> -
+	This error means that the <i>User Name</i> field was either left blank or contains invalid characters.
+	Resubmit form with an alternate user name.
+<br><br>
+<b>Invalid password</b> -
+	This error means the <i>Password</i> field was either left blank or contains invalid characters.
+	Resubmit the form with an alternate password.
+<br><br>
+<b>Incorrect password</b> -
+	This error means the <i>Password</i> and <i>Confirm</i> fields do not match.
+	Resubmit the form.
+<br><br>
+<b>Duplicate user name</b> -
+	This error means the user name already exists on the server.
+	Resubmit the form using an alternate user name.
+<br><br>
+<b>Server cannot create user at this time</b> -
+	This error means the server was not available to process the request.
+	If the error persists, contact technical support.
+<br><br>
+<b>Server error</b> -
+	This means a server side configuration is incorrect.
+	Contact technical support to resolve the error.
+<br><br>
+<hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+
+</font>
+
+</body>
+
+</html>

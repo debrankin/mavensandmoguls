@@ -1,0 +1,73 @@
+<!-- rev 07/20/2000 -->
+
+<html>
+
+<head>
+
+<meta author="Guangbin Liu">
+
+<script language="JavaScript">
+<!--
+function preSubmit()
+{
+
+	document.frmMain.name.value			= parent.fraHeader.document.frmLogin.username.value;
+	document.frmMain.oldpassword.value 	= parent.fraHeader.document.frmLogin.password.value;
+	document.frmMain.virtualhost.value                      = parent.fraHeader.document.frmLogin.virtualhost.value;
+	document.frmMain.submit();	
+}
+// -->
+</script>
+
+</head>
+
+<body TEXT="#000000" LINK="#0000FF" bgcolor="#FFFFFF">
+
+<center>
+
+<form name="frmMain" action="/adminpage/admin-request" method="post">
+
+	<input type="hidden" name="function" value="SERVERADMIN">
+	<input type="hidden" name="name" value="">
+	<input type="hidden" name="oldpassword" value="">
+	<input type="hidden" name="serveradmin" value="">
+	<input type="hidden" name="virtualhost" value="">
+	
+	<table>
+	<tr>
+		<th colspan=2><font face="sans-serif"><h4>Change existing Server Admin Address</h4></font></th>
+	</tr>
+	<tr><td align="right"><font face="sans-serif">Server Admin Email:</font></td>
+	<td>
+        <script>
+        <!--
+	document.write('<input type="text" name="email" size="30" value="' + parent.fraHeader.document.frmLogin.serveradmin.value + '" onFocus="this.select();">');
+        // -->
+        </script>
+	<tr>
+		<td colspan=3 valign="bottom" height=50>
+		<center>
+			<input type="button" value="Change" onclick="preSubmit();"> &nbsp;
+			<input type="reset" value="Cancel">
+		</center>
+		</td>
+	</tr>
+	</table>
+</form>
+
+</center>
+
+<script language="JavaScript">
+<!--
+	if ( ( parent.fraHeader.document.frmLogin.username.value == '' ) ||
+		 ( parent.fraHeader.document.frmLogin.password.value == '' ))
+	{
+		alert('You must set your login information\nbefore using any functions.');
+		parent.fraHeader.loadForm('login');
+	}
+// -->
+</script>
+
+</body>
+
+</html>

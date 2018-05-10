@@ -1,0 +1,60 @@
+<!-- rev 07/20/2000 -->
+
+<html>
+
+<head>
+
+<meta author="Guangbin Liu">
+
+<script language="JavaScript">
+<!--
+function cancel()
+{
+parent.fraMain.location = "./disclaimer.html";
+}
+// -->
+</script>
+
+</head>
+
+<body TEXT="#000000" LINK="#0000FF" bgcolor="#FFFFFF">
+
+<form name="frmMain" action="/adminpage/admin-request" method="post">
+<br>
+<font face="sans-serif">
+<script>
+<!--
+if  ( parent.fraHeader.document.frmLogin.adminpagestats.value == 'LATEST' ) 
+        {
+		document.write("Your admin page is in latest version and you needn't update it.\n");
+        }
+else {
+document.write('<input type="hidden" name="function" value="UPDATE">');
+document.write('<input type="hidden" name="name" value="' + parent.fraHeader.document.frmLogin.username.value + '">');
+document.write('<input type="hidden" name="passwd" value="' + parent.fraHeader.document.frmLogin.password.value + '">');
+document.write('Your UNIX admin page is not up to date, we have newer version available. Would you like to update it?<p>\n');
+document.write('<center>');
+document.write('<input type="button" value="YES, Update My Admin Page" onclick="document.frmMain.submit();"></center>');
+document.write('<center>');
+document.write('<input type="button" value="NO, Keep My Old Page" onclick="cancel();"></center>');
+}
+// -->
+</script>
+</form>
+
+<script language="JavaScript">
+<!--
+	if ( ( parent.fraHeader.document.frmLogin.username.value == '' ) ||
+		 ( parent.fraHeader.document.frmLogin.password.value == '' ))
+	{
+		alert('You must set your login information\nbefore using any functions.');
+		parent.fraHeader.loadForm('login');
+	}
+// -->
+</script>
+
+</center>
+
+</body>
+
+</html>

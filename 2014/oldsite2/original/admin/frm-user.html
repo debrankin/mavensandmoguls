@@ -1,0 +1,111 @@
+<!-- rev 07/20/2000 -->
+
+<html>
+
+<head>
+
+<meta author="Guangbin Liu">
+
+<script language="JavaScript">
+<!--
+function preSubmit()
+{
+	document.frmMain.adminame.value	= parent.fraHeader.document.frmLogin.username.value;
+	document.frmMain.adminpass.value = parent.fraHeader.document.frmLogin.password.value;
+	document.frmMain.submit();
+}
+// -->
+</script>
+
+</html>
+
+</head>
+
+<body TEXT="#000000" LINK="#0000FF" bgcolor="#FFFFFF">
+
+<center>
+
+<form name="frmMain" action="/adminpage/admin-request" method="post">
+
+	<input type="hidden" name="function" value="USER">
+	<input type="hidden" name="adminame" value="">
+	<input type="hidden" name="adminpass" value="">
+	
+	<table>
+	<tr>
+		<th colspan=2><font face="sans-serif"><h4>Admin User(s) Creation& Deletion </h4></font></th>
+	</tr>
+	<tr>
+        <script>
+        <!--
+        if (parent.fraHeader.document.frmLogin.users.value != '') {
+		document.write('<td align="right"><input type=radio name="option" value="create"><font face="sans-serif"> Create User:</font>'); }
+	else {
+	document.write('<input type="hidden" name="option" value="create">');
+	document.write('<td align="right"><font face="sans-serif"> Create User:</font>'); 
+	}
+	// -->
+	</script>
+		</td>
+		<td><input type="text" name="createusername" size="20" onFocus="this.select();"></td>
+	</tr>
+	<script>
+	<!--
+	if (parent.fraHeader.document.frmLogin.subusers.value != '') {
+	document.write("<tr><td align='right'><input type=radio name='option' value='delete'><font face='sans-serif'> Delete User:</font></td><td>");
+	document.write("<select name='deleteusername'>", parent.fraHeader.document.frmLogin.subusers.value, "</select>");
+	document.write('</td></tr>');
+	}
+		// -->
+		</script>
+	<tr>
+		<td align="right"><font face="sans-serif">Password:</font></td>
+		<td><input type="password" name="enterpassword" size="20" onFocus="this.select();"></td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td align="right"><font face="sans-serif">Confirm:</font></td>
+		<td><input type="password" name="confirm" size="20" onFocus="this.select();"></td>
+	</tr>
+	<tr>
+		<td align="right"><font face="sans-serif">Dir:</font></td>
+		<td>
+		<script>
+		<!--
+		document.write('<select name="dir">' +
+parent.fraHeader.document.frmLogin.userdir.value + '</select>');
+		// -->
+		</script>
+		</td>
+	</tr>
+	<tr>
+	<td align="right"><font face="sans-serif">Shell:</font></td>
+	<td><select name="shell"><option name=/bin/bash>/bin/bash<option name=/bin/rksh>/bin/rksh</select></td></tr>
+        <tr>
+                <td align="right"><font face="sans-serif">Bounce/Reply-to:</font></td>
+                <td><input type="text" name="email" size="30" onFocus="this.select();"></td>
+        </tr>
+<tr><td colspan=2 valign="bottom" height=50>
+<center><input type="button" value="Submit" onclick="preSubmit()">
+<input type="reset" value="Reset" <br>
+</td></tr>
+</table>
+</form>
+
+</center>
+
+<script language="JavaScript">
+<!--
+	if ( ( parent.fraHeader.document.frmLogin.username.value == '' ) ||
+		 ( parent.fraHeader.document.frmLogin.password.value == '' )) 
+	{
+		alert('You must set your login information\nbefore using any functions.');
+		parent.fraHeader.loadForm('login');
+	}
+// -->
+</script>
+
+</body>
+
+</html>

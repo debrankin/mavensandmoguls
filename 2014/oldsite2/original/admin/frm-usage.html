@@ -1,0 +1,38 @@
+<!-- rev 07/20/2000 -->
+
+<html>
+
+<head>
+
+<meta author="Guangbin Liu">
+
+</head>
+
+<body TEXT="#000000" LINK="#0000FF" bgcolor="#FFFFFF">
+
+<center>
+
+<form name="frmMain" action="/adminpage/admin-request" method="post">
+	<input type="hidden" name="function" value="USAGE">
+</form>
+
+<script language="JavaScript">
+<!--
+	if ( ( parent.fraHeader.document.frmLogin.username.value == '' ) ||
+		 ( parent.fraHeader.document.frmLogin.password.value == '' ))
+	{
+		alert('You must set your login information\nbefore using any functions.');
+		parent.fraHeader.loadForm('login');
+	}
+	else
+	{
+		document.frmMain.submit();
+	}
+// -->
+</script>
+
+</center>
+
+</body>
+
+</html>

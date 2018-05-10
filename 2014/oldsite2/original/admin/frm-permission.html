@@ -1,0 +1,57 @@
+<!-- rev 07/20/2000 -->
+
+<html>
+
+<head>
+
+<meta author="Guangbin Liu">
+
+<script language="JavaScript">
+<!--
+function cancel()
+{
+parent.fraMain.location = "./disclaimer.html";
+}
+// -->
+</script>
+
+</head>
+
+<body TEXT="#000000" LINK="#0000FF" bgcolor="#FFFFFF">
+
+<form name="frmMain" action="/adminpage/admin-request" method="post">
+<br>
+<font face="sans-serif">
+The Reset Permission function will reset the permission<br>
+of your directories to the default value. Are you sure <br>
+that you want to reset? </font>
+<br>
+<br>
+<center><input type="button" value="Yes, Reset Permission" onclick="document.frmMain.submit();"></center><br>
+<center><input type="button" value="No, Cancel Reset" onclick="cancel();">
+	<input type="hidden" name="function" value="PERMISSION">
+	<script>
+	<!--
+	document.write('<input type="hidden" name="name" value="' + parent.fraHeader.document.frmLogin.username.value + '">');
+        document.write('<input type="hidden" name="passwd" value="' + parent.fraHeader.document.frmLogin.password.value + '">');
+	// -->
+	</script>
+	
+</form>
+
+<script language="JavaScript">
+<!--
+	if ( ( parent.fraHeader.document.frmLogin.username.value == '' ) ||
+		 ( parent.fraHeader.document.frmLogin.password.value == '' ))
+	{
+		alert('You must set your login information\nbefore using any functions.');
+		parent.fraHeader.loadForm('login');
+	}
+// -->
+</script>
+
+</center>
+
+</body>
+
+</html>
