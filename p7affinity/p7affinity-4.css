@@ -625,6 +625,13 @@ a:hover {
 	background-color: rgba(215,213,213,0.29);
 }
 #logo .head-banner {
+    width: 40%;
+    float: left;
+}
+.search-site {
+    float: right;
+    width: 20%;	
+	
 }
 
 /*1 Column for Narrow Browser Windows and Smartphones in both orientations*/
