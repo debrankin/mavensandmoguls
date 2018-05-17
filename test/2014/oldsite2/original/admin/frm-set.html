@@ -1,0 +1,105 @@
+<!-- rev 07/20/2000 -->
+
+<html>
+
+<head>
+
+<meta author="Guangbin Liu">
+
+<script language="JavaScript">
+<!--
+function preSubmit(insethtaccess)
+{
+	document.frmMain.name.value		= parent.fraHeader.document.frmLogin.username.value;
+	document.frmMain.passwd.value	= parent.fraHeader.document.frmLogin.password.value;
+	
+	document.frmMain.sethtaccess.value = insethtaccess;
+	
+	document.frmMain.submit();	
+}
+// -->
+</script>
+
+</head>
+
+<body TEXT="#000000" LINK="#0000FF" bgcolor="#FFFFFF">
+
+<center>
+
+<form name="frmMain" action="/adminpage/admin-request" method="post">
+
+	<input type="hidden" name="function" value="SET">
+	<input type="hidden" name="name" value="">
+	<input type="hidden" name="passwd" value="">
+	<input type="hidden" name="sethtaccess" value="">
+	
+	<table>
+	<tr>
+		<th colspan=2><font face="sans-serif"><h4>Set .htaccess</h4></font></th>
+	</tr>
+	<tr>
+		<td align="right"><font face="sans-serif">User Name:</font></td>
+		<td><input type="text" name="newuser" size="20" onFocus="this.select();"></td>
+	</tr>
+	<tr>
+		<td align="right"><font face="sans-serif">Password:</font></td>
+		<td><input type="password" name="newpasswd" size="20" onFocus="this.select();"></td>
+	</tr>
+	<tr>
+		<td align="right"><font face="sans-serif">Directory:</font></td>
+		<td>
+		 <script>
+        	<!--
+		document.write('<select name="dir">'
++ parent.fraHeader.document.frmLogin.htmldirs.value + '</select>');
+		// -->
+		</script>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 valign="bottom" height=75>
+		<center>
+			<table>
+			<tr>
+				<td>
+		<input type="button" width=100 value="    Add User   "
+						onclick="preSubmit('add')">
+				</td>
+				<td>
+		<input type="button" width=100 value=" Delete User"
+						onclick="preSubmit('delete')">
+				</td>
+			</tr>
+			<tr>
+				<td>
+		<input type="button" width=100 value="Remove File"
+						onclick="preSubmit('remove')">
+				</td>
+				<td>
+		<input type="button" width=100 value="    View Users"
+						onclick="preSubmit('view')">
+				</td>
+			</tr>
+			</table>
+		</center>
+		</td>
+	</tr>
+	</table>
+</form>
+
+</center>
+
+<script language="JavaScript">
+<!--
+	if ( ( parent.fraHeader.document.frmLogin.username.value == '' ) ||
+		 ( parent.fraHeader.document.frmLogin.password.value == '' ))
+	{
+		alert('You must set your login information\nbefore using any functions.');
+		parent.fraHeader.loadForm('login');
+	}
+// -->
+</script>
+
+</body>
+
+</html>

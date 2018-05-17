@@ -1,0 +1,43 @@
+#page-wrap {
+	position: absolute;
+	float: left;
+	margin-top: 75px;
+	margin-right: 0;
+	margin-bottom: 25px;
+	margin-left: 0;
+}
+
+#box{
+	position: static;
+	height: 280px;
+	background-repeat: no-repeat;
+	border: 1px solid #888282;
+	background-color: #D2CFCF;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	text-align: center;
+	width: 37px;
+	padding-top: 4px;
+	padding-right: 3px;
+	padding-bottom: 4px;
+	padding-left: 3px;
+}
+
+#box div{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0;
+}
+#smsharebar {
+	float: left;
+	width: 400px;
+	margin-top: 15px;
+}
+#LI-share {
+	float: left;
+	width: 80px;
+	margin-top: 15px;
+}
+#neg {
+	margin-top: -8px;
+}

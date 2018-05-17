@@ -1,0 +1,77 @@
+<!-- rev 98.08.24 -->
+
+<html>
+
+<head>
+
+<meta author="Stephen C. Majewski">
+
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+<font size=2 face="sans-serif">
+
+<a name="overview"><hr><center><font size=1>[<b>Overview</b>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+
+.htaccess is a function that is use to password-protect web pages. It creates the actual password list along with the specific users and the encrypted passwords. The main purpose of this program is to give the administrator of the web site the option to make his/her site public, where everyone could browse, or private, only specific persons could browsers. This program has four (4) main functions: 
+<ul>
+<li><b>Create User</b>, where you create users to access your web site.
+<li><b>Delete User</b>, where you delete any user that was created to access your web site.
+<li><b>Remove File</b>, where you remove the .htpasswd or/and .htaccess file that was created. 
+<li><b>View File</b>, where you could view all your users in your .htpasswd file. 
+</ul>
+
+<br><br>
+
+<a name="fields"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<b>Fields</b>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+For specific functions, there are specific requirements:
+<b>Create User</b> 
+<li>User Name: (Required) This field is for identifying the user name you wish to create to access your web site.
+<li>Password: (Required) This field is for setting the password for the user you are creating to access your web site.
+<li>Directory: (Required) This field is for specifying which "html" directory you would like to create access for specific users to browser.  <font color="red">If Directory is left blank, the htaccess program is created in your "html" directory.</font>
+  
+<b>Delete User</b> 
+<li>User Name: (Required) This field is for identifying the user name you wish to delete to access your web site.
+<li>Directory: (Required) This field is for specifying which "html" directory you would like to create access for specific users to browser.  <font color="red">If Directory is left blank, the htaccess program is deleted in your "html" directory.</font>
+
+<b>Remove File</b> 
+<li>Directory: (Required) This field is for specifying which "html" directory you would like to delete the htaccess program from.
+<b>View File</b> 
+<li>Directory: (Required) This field is for specifying which .htpasswd file you would like to view. If Directory is left blank, the htaccess program is viewed from your "html" directory, which is the default.
+<br><br>
+
+<a name="notes"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<b>Notes</b>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+The user you create will have access to browser that entire directory on-line.
+<br><br>
+
+<a name="samples"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<b>Samples</b>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+<pre><font size=2 face="sans-serif">
+ User Name: soca
+  Password: socasong
+          : html/dir
+<font color=red>*Click either "create user" or "delete user" to execute operation.</font>
+</font></pre>
+
+<a name="errors"><hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<b>Errors</b>]</font></center><hr>
+
+<b>Invalid admin name</b> - This error means that the <i>Admin Name</i> field was either left blank or contains invalid characters.  Resubmit form with an alternate user name.<p>
+
+<b>Invalid user name</b> - This error means that the <i>User Name</i> field was either left blank or contains invalid characters.  Resubmit form with an alternate user name.<p>
+
+<b>Invalid password</b> - This error means that the <i>Password</i> field was either left blank or contains invalid characters.  Resubmit form with an alternate password.<p>
+
+<b>Duplicate user name</b> - This error means that the user name already exists on the server. Resubmit the form using an alternate user name.<p>
+
+<b>Server cannot create user at this time</b> - This error means that the server was unable to process your request.  If the error persists, contact technical support to resolve this error.<p>
+<br><br>
+
+<hr><center><font size=1>[<a href="#overview"><b>Overview</b></a>] [<a href="#fields"><b>Fields</b></a>] [<a href="#notes"><b>Notes</b></a>] [<a href="#samples"><b>Samples</b></a>] [<a href="#errors"><b>Errors</b></a>]</font></center><hr>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+</font>
+
+</body>
+
+</html>

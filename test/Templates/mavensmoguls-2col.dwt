@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta id="p7MGM" name="viewport" content="width=device-width">
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="meta" -->
+<meta name="description" content="With Mavens & Moguls, you always get a team of seasoned marketing professionals who have hands-on experience in the specific areas of your project." />
+<meta name="keywords" content="marketing consultant,entrepreneurship, marketing advice, fortune 500, venture capitalism, expert marketing, marketing, business marketing " />
+<!--TemplateEndEditable -->
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Mavens and Moguls</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
+<link href="../p7mgm/p7MGM-03.css" rel="stylesheet" type="text/css" media="all">
+<link href="../p7affinity/p7metroplex-animate.css" rel="stylesheet" type="text/css">
+<link href="p7ap3/p7AP3-01.css" rel="stylesheet" type="text/css" media="all">
+<link href="p7ap3/p7ap3-columns.css" rel="stylesheet" type="text/css" media="all">
+<link href="../p7affinity/p7affinity-4.css" rel="stylesheet" type="text/css" media="all">
+<link href="../p7affinity/p7affinity_print.css" rel="stylesheet" type="text/css" media="print">
+	
+	<!-- TemplateBeginEditable name="moreCSS" -->
+<!-- TemplateEndEditable -->
+<script type="text/javascript" src="p7ap3/p7AP3scripts.js"></script>
+<script type="text/javascript" src="../p7ehc/p7EHCscripts.js"></script>
+<script type="text/javascript" src="../p7mgm/p7MGMscripts.js"></script>
+<!--[if lte IE 7]>
+<style>
+body {min-width: 1020px;}
+.affinity-row {zoom: 1;}
+#layout {width: 980px;}
+</style>
+<![endif]-->
+<!-- jQuery library -->
+<script async type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+			$('#backtotop').fadeIn();	
+		} else {
+			$('#backtotop').fadeOut();
+		}
+	});
+ 
+	$('#backtotop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
+	});	
+});
+</script>
+<script async>
+$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});</script>
+<!-- TemplateParam name="more css" type="text" value="" -->
+</head>
+
+<body><div id="fb-root"></div>
+<script async>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=396444913706132";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="logo"><img src="../images/logo.png" alt=""/></div>
+<div id="p7MGM_1" class="p7MGM-03 p7MGM p7MGMdesign-time responsive menu-centered rounded transparent">
+  <div id="p7MGMtb_1" class="mgm-toolbar closed"><a href="#" title="Hide/Show Menu">&equiv;</a></div>
+  <ul id="p7MGMu_1" class="mgm-root-list">
+    <li class="mgm-root-item"><a id="p7MGMa1_1" class="mgm-root-item p7MGM_img" href="index.html"><img src="../images/home-icon.png" width="18" height="16" alt=""></a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_2" class="mgm-root-item" href="../about-us.html">About Us</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_3" class="mgm-root-item" href="../services.html">Services</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_4" class="mgm-root-item" href="../portfolio.html">Portfolio</a></li>
+    <li class="mgm-root-item mgm-trig"><a id="p7MGMa1_5" class="mgm-root-item mgm-trig" href="../articles.html">Articles</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_6" class="mgm-root-item" href="../case-studies.html">Case Studies</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_7" class="mgm-root-item" href="../speaker-programs.html">Speaker Programs</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_8" class="mgm-root-item" href="../contact-us.html">Contact Us</a></li>
+  </ul>
+  <div id="p7MGMs1_5" class="mgm-mega-menu width100">
+    <div class="mgm-mega-content">
+      <div class="p7mgm-row mgm-col-20-20-20-20-20 col-sep">
+        <div class="p7mgm-Col p7mgm-percent20">
+          <div class="p7mgm-ColContent p7ehc-3">
+            <p><a href="../articles.html?apm3=#p7AP3t1_1">Articles - Section I</a></p>
+          </div>
+        </div>
+        <div class="p7mgm-Col p7mgm-percent20">
+          <div class="p7mgm-ColContent p7ehc-3 border-left">
+            <p><a href="../articles.html?apm3=#p7AP3t1_2">Articles - Section II</a></p>
+          </div>
+        </div>
+        <div class="p7mgm-Col p7mgm-percent20">
+          <div class="p7mgm-ColContent p7ehc-3 border-left">
+            <p><a href="../articles.html?apm3=#p7AP3t1_3">Articles - Section III</a></p>
+          </div>
+        </div>
+        <div class="p7mgm-Col p7mgm-percent20">
+          <div class="p7mgm-ColContent p7ehc-3 border-left">
+            <p><a href="../articles.html?apm3=#p7AP3t1_4" >Articles - Section IV</a></p>
+          </div>
+        </div>
+		      <div class="p7mgm-Col p7mgm-percent20">
+          <div class="p7mgm-ColContent p7ehc-3 border-left">
+            <p><a href="../articles.html?apm3=#p7AP3t1_5">Articles - Section V</a></p>
+          </div>
+        </div>
+        <div class="p7mgm-Col p7mgm-percent20">
+          <div class="p7mgm-ColContent p7ehc-3 border-left">
+            <p><a href="../articles.html?apm3=#p7AP3t1_6" >Book Contributions</a></p>
+          </div>
+        </div>
+     
+        <div class="p7mgm-Col p7mgm-percent20">
+          <div class="p7mgm-ColContent p7ehc-3 border-left">
+            <p><a href="../articles.html?apm3=#p7AP3t1_7">Awards</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">P7_MGMop('p7MGM_1',1,450,1,1,1,1,0,2,1,0,1,900)</script>
+</div>
+<div id="layout">
+  <div class="affinity-row sidebar-right"><!-- TemplateBeginEditable name="maincontent" -->
+  <div class="column-1">
+    <div class="column-content boxed p7ehc-sbr">
+      <h1>O r purpose...</h1>
+      <p class="blast">Lorem ipsum dolor sit amet, ne sea vocent scripta abhorreant, facilisi explicari mel ne, ut quo vide ridens. Mei ex quodsi inciderint, quo ad quas deleniti definitionem, vis no wisi graecis offendit. Ius ut everti detraxit expetenda, meis civibus consectetuer ea usu. Ad qui option facilisis consequuntur, pro omnis aliquip vulputate te. Solum affert expetenda eos te, et vim sale iudico impetus, in appetere postulant ius. </p>
+<h2>Additionally speaking...</h2>
+      <p>Alia nihil utroque ex sit, in ius hinc mandamus. Quaestio ocurreret vel at, odio amet eam ex. Has verear oporteat recusabo an, eu pro novum putant, eum eu tibique urbanitas. Per no esse atqui. An tota libris deterruisset eum, graeco interesset per an, et vis graece ignota. Sit mollis voluptaria ut, nostro option similique vix cu, eros nostrud aliquando cu ius. Graecis praesent at eos, principes torquatos ex has. Ea malis pertinax sea. Id pro omnis constituam, ex sea dicant aperiri qualisque. Sit odio fierent mediocrem in, aeque homero similique ut vim. Ad qui option facilisis consequuntur, pro omnis aliquip vulputate te. Solum affert expetenda eos te, et vim sale iudico impetus, in appetere postulant ius. Alia nihil utroque ex sit, in ius hinc mandamus. Quaestio ocurreret vel at, odio amet eam ex. Has verear oporteat recusabo an, eu pro novum putant. Lorem ipsum dolor sit amet, ne sea vocent scripta abhorreant, facilisi explicari mel ne, ut quo vide ridens. Mei ex quodsi inciderint, quo ad quas deleniti definitionem, vis no wisi graecis offendit. Ius ut everti detraxit expetenda, meis civibus consectetuer ea usu. Ad qui option facilisis consequuntur, pro omnis aliquip vulputate te. Solum affert expetenda eos te, et vim sale iudico impetus, in appetere postulant ius. Alia nihil utroque ex sit, in ius hinc mandamus. Quaestio ocurreret vel at, odio amet eam ex. Has verear oporteat recusabo an, eu pro novum putant, eum eu tibique urbanitas. Per no esse atqui. An tota libris deterruisset eum, graeco interesset per an, et vis graece ignota. Sit mollis voluptaria ut, nostro option similique vix cu, eros nostrud aliquando cu ius. Graecis praesent at eos, principes torquatos ex has. Ea malis pertinax sea. Id pro omnis constituam, ex sea dicant aperiri qualisque. Sit odio fierent mediocrem in, aeque homero similique ut vim. Ad qui option facilisis consequuntur, pro omnis aliquip vulputate te. Solum affert expetenda eos te, et vim sale iudico impetus, in appetere postulant ius. Alia nihil utroque ex sit, in ius hinc mandamus. Quaestio ocurreret vel at, odio amet eam ex. Has verear oporteat recusabo an, eu pro novum putant.</p>
+    </div>
+  </div>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="sidebar" -->
+  <div class="column-2">
+    <div class="column-content boxed  p7ehc-sbr p7-animate fade-in-down">
+      <h2>Job 1: Efficiency</h2>
+      <p>Lorem ipsum dolor sit amet, ne sea vocent scripta abhorreant, facilisi explicari mel ne, ut quo vide ridens. Mei ex quodsi inciderint, quo ad quas deleniti definitionem, vis no wisi graecis offendit. Ius ut everti detraxit expetenda, meis civibus consectetuer ea usu. Ad qui option facilisis consequuntur, pro omnis aliquip vulputate te.</p>
+    </div>
+  </div>
+  <!-- TemplateEndEditable --></div>
+ 
+</div><div class="totop">
+      <div id="backtotop">Scroll to Top</div>
+    </div>
+<div class="affinity-row  black footer">
+  <div class="column-half">
+    <div class="column-content">Mavens &amp; Moguls SM is a service mark of Mavens &amp; Moguls LLC. <br>
+      www.mavennsandmoguls.com <br>
+    </div>
+  </div>
+  <div class="column-fourth no-margin"></div>
+  <div class="column-fourth no-margin">
+    <div class="column-content"><a href="javascript:;">© 2002-2018 Mavens &amp; Moguls LLC. All rights reserved.</a></div>
+  </div>
+</div> <script async type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script async type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5114339-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

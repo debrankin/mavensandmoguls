@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta id="p7DMM" name="viewport" content="width=device-width">
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Affinity Metroplex: Layout 04</title>
+<!-- TemplateEndEditable -->
+<link href="../p7dmm/p7DMM04.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="../p7ehc/p7EHCscripts.js"></script>
+<link href="../p7affinity/p7affinity-4.css" rel="stylesheet" type="text/css" media="all">
+<link href="../p7affinity/p7affinity_print.css" rel="stylesheet" type="text/css" media="print">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
+<link href="../p7affinity/p7metroplex-animate.css" rel="stylesheet" type="text/css">
+
+<!--[if lte IE 7]>
+<style>
+body {min-width: 1020px;}
+.affinity-row {zoom: 1;}
+#layout {width: 980px;}
+</style>
+<![endif]-->
+<script type="text/javascript" src="../p7ehc/p7EHCscripts.js"></script>
+<link href="../p7mgm/p7MGM-03.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="../p7mgm/p7MGMscripts.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<div id="logo"><img src="../images/logo.png" alt=""/></div>
+<div id="p7MGM_1" class="p7MGM-03 p7MGM p7MGMdesign-time responsive menu-centered rounded transparent">
+  <div id="p7MGMtb_1" class="mgm-toolbar closed"><a href="#" title="Hide/Show Menu">&equiv;</a></div>
+  <ul id="p7MGMu_1" class="mgm-root-list">
+    <li class="mgm-root-item"><a id="p7MGMa1_1" class="mgm-root-item" href="#">Home</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_2" class="mgm-root-item" href="#">About Us</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_3" class="mgm-root-item" href="#">Services</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_4" class="mgm-root-item" href="#">Portfolio</a></li>
+    <li class="mgm-root-item mgm-trig"><a id="p7MGMa1_5" class="mgm-root-item mgm-trig" href="#">Articles</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_6" class="mgm-root-item" href="#">Speaker Programs</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_7" class="mgm-root-item" href="#">Contact Us</a></li>
+  </ul>
+  <div id="p7MGMs1_5" class="mgm-mega-menu width100">
+    <div class="mgm-mega-content">
+      <div class="p7mgm-row mgm-col-33-33-33 col-sep">
+        <div class="p7mgm-Col p7mgm-percent33">
+          <div class="p7mgm-ColContent p7ehc-1">
+            <p>Articles I</p>
+          </div>
+        </div>
+        <div class="p7mgm-Col p7mgm-percent33">
+          <div class="p7mgm-ColContent p7ehc-1 border-left">
+           <p>Articles II</p>
+          </div>
+        </div>
+        <div class="p7mgm-Col p7mgm-percent33">
+          <div class="p7mgm-ColContent p7ehc-1 border-left">
+            <p>Book Contributions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">P7_MGMop('p7MGM_1',1,450,1,1,1,1,0,0,1,0,1,900)</script>
+</div>
+
+<div id="layout"><!-- TemplateBeginEditable name="optional" -->
+  <div class="affinity-row">
+    <div class="column-content red">
+      <h1>Mavens &amp; Moguls is a global strategic marketing consulting firm</h1>
+      <p>Collaborate with a team of experienced Chief Marketing Officers and seasoned marketing professionals</p>
+    </div>
+  </div>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="maincontent" -->
+  <div class="affinity-row">
+    <div class="column-content black p7ehc-1">
+      <p class="p7-animate zoom-in"><img src="../art/metroplex-05.jpg" alt="" name="bingdailylarge" width="1360" height="360" border="0"></p>
+      <p>Mavens &amp; Moguls works with venture capitalists, entrepreneurs and business executives who seek expert marketing advice and innovative ideas without the overhead of a full-time marketing staff.  Our clients value our expertise and passion.  We work with businesses across various categories from startups to Fortune 500 companies.</p>
+      <ul>
+        <li>your company is trying to raise capital</li>
+        <li>your business is launching a new product or service</li>
+        <li>you want to grow or invigorate an established brand</li>
+        <li>you want to create innovative media strategies</li>
+        <li>your marketing team has critical gaps in key areas</li>
+      </ul>
+      <p>. . . You've come to the right place</p>
+      <p>We know how to solve your problems and get results. It is rarely too early to bring in marketing expertise but it is often too late. </p>
+      Contact Mavens &amp; Moguls for practical advice from real world experience.</div>
+  </div>
+  <!-- TemplateEndEditable -->
+  <div class="affinity-row footer">
+    <div class="column-fourth">
+      <div class="column-content">
+        <ul>
+          <li><a href="javascript:;">Footer Link Number One</a></li>
+          <li><a href="javascript:;">Footer Link Number Extended Width Two</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="column-fourth">
+      <div class="column-content">
+        <ul>
+          <li><a href="javascript:;">Footer Link Number One</a></li>
+          <li><a href="javascript:;">Footer Link Number Extended Width Two</a></li>
+          <li><a href="javascript:;">Footer Link Number Three</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="column-fourth">
+      <div class="column-content">
+        <ul>
+          <li><a href="javascript:;">Footer Link Number One</a></li>
+          <li><a href="javascript:;">Footer Link Number  Two</a></li>
+          <li><a href="javascript:;">Footer Link Number Extended Width Three</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="column-fourth no-margin">
+      <div class="column-content">
+        <ul>
+          <li><a href="javascript:;">Footer Link Number One</a></li>
+          <li><a href="javascript:;">Footer Link Number Extended Width Two</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">&copy;2015 Mavens &amp; moguls</div> 
+</div>
+</body>
+</html>

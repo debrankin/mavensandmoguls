@@ -72,7 +72,14 @@ $(function() {
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=396444913706132";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div id="logo"><img src="images/logo.png" alt=""/></div>
+<div id="logo"><div class="head-banner"><img src="images/logo.png" alt=""/></div><input id="searchBox" type="text" placeholder="search" /><button onclick="return clickSearch(event);"></button><script>function clickSearch(clickevent) {
+    var e = jQuery.Event("keyup");
+    e.which = 13;
+    e.keyCode = 13;
+    $("#searchBox").trigger(e);
+    clickevent.stopPropagation();
+    return false;
+}</script><div style="clear:both;"></div></div>
 <div id="p7MGM_1" class="p7MGM-03 p7MGM p7MGMdesign-time responsive menu-centered rounded transparent">
   <div id="p7MGMtb_1" class="mgm-toolbar closed"><a href="#" title="Hide/Show Menu">&equiv;</a></div>
   <ul id="p7MGMu_1" class="mgm-root-list">
@@ -2660,5 +2667,236 @@ var pageTracker = _gat._getTracker("UA-5114339-1");
 pageTracker._initData();
 pageTracker._trackPageview();
 </script></div>
+      <script type="text/javascript">
+   // create a settings object
+   var ss360Config = {
+      /////////// required ///////////
+      // your site id
+      siteId: 'mavensandmoguls.com/',
+      // a CSS selector that points to your search  box
+      searchBoxSelector: '#searchBox',
+
+      /////////// optional ///////////
+      // the text to show before the search results, #QUERY# will be replace with the query
+      searchResultsCaption: 'Found #COUNT# search results for \"#QUERY#\"',
+      // if undefined, a layer with the search results will appear
+      // you can embed the results by pointing to the DOM element where the results should be inserted
+      // e.g. {'contentBlock':'a selector where the results should be inserted'}
+      searchResults: undefined, 
+      // the trigger that when clicked, opens the fullscreen search
+      searchTrigger: undefined,
+      // the caption on the full screen search page - only relevant if searchTrigger != undefined
+      fullScreenSearchCaption: 'Search this Demo Site',
+      // whether to show search suggestions
+      showSearchSuggestions: true,
+      // whether to show images in search suggestions
+      showImagesSuggestions: true, 
+      // whether to show images in search results
+      showImagesResults: true, 
+      // if you want to trigger the search on a click of a button, put the button CSS selector here
+      // e.g. 'button.search-button'
+      searchButton: undefined,
+      // speed of the animations in milliseconds
+      animationSpeed: 300,
+      // minimum number of characters before the suggestions shows
+      minChars: 3, 
+      // the maximum number of search suggestions to be shown [1, 25]
+      numSuggestions: 10, 
+      // the maximum number of query suggestions (v9 and up)
+      maxQuerySuggestions: 3, 
+      // the maximum number of search results to be shown [1,1000]
+      numResults: 100, 
+      // if you want the default CSS styling
+      defaultCss: true,
+      // navigation through content groups on "top", "left", or "none"
+      navigation: 'top',
+      // whether to highlight query terms in the search suggestions
+      highlight: true, 
+      // whether to highlight the query terms in search results
+      highlightQueryTerms: true, 
+      // the placeholder text in the search box
+      placeholder: 'Search here',
+      // if true, the search box will get focus after initialization
+      autofocus: false, 
+      // the theme color (navigation, loader, headlines)
+      themeColor: '#329fd9',
+      // extra HTML code that is shown in each search suggest
+      extraHtml: undefined,
+      // styling for the search box (for more styling override the css instead)
+      searchBoxStyle: {
+        text: {
+            color: '#1a74d7',
+            size: '14px'
+        },
+        background: {
+            color: '#f0f0f0',
+        },
+        padding: '8px',
+        icon: {
+            image: 'magnifier',
+            color: '#666666'
+        },
+        border: {
+            color: '#ffffff',
+            radius: '0px',
+        },
+        button: {
+            text: 'Go!',
+            icon: undefined,
+            color: '#666666'
+        }
+      },
+      // styling for the suggestions (for more styling override the css instead)
+      suggestionsStyle: {
+        text: {
+            color: '#1a74d7',
+        },
+        background: {
+            color: '#f0f0f0'
+        },
+        padding: '10px',
+        distanceFromTop: '140px',
+        border: {
+            color: '#ffffff',
+            radius: '0px',
+        },
+      },
+      // the name of the results not in any other content group
+      otherContentGroupName: 'Other',
+      // whether or not to ignore the "other" content group
+      ignoreOtherContentGroup: false,
+      // whether results should be grouped when content groups are available (v9 and up)
+      groupResults: true,
+      // whether or not to show links to the result in the search result
+      showResultLink: false,
+      // whether clicking on links should open a new tab/window
+      resultLinksOpenNewTab: false,
+      // the name of the search query parameter, e.g. http://site.com?ss360Query=search (v8 and up)
+      searchQueryParamName: 'ss360Query',
+      // HTML for the more results button, if this is undefined, all results will be shown
+      // e.g. 'Show more results'
+      moreResultsButton: undefined, 
+      // the number of new results to show each time the more results button is pressed, moreResultButton must not be undefined
+      moreResultsPagingSize: 50,
+      // the (HTML) text to show if a spelling correction is available (v9 and up)
+      queryCorrectionText: 'Did you mean "#CORRECTION#"?',
+      // the (HTML) text to show when there are no results
+      noResultsText: 'Sorry, we have <b>not found any matches</b> for your query.', 
+      // the (HTML) text to show when there are no suggests, default: undefined (no text)
+      noSuggests: '<b>We haven\'t found anything for you, sorry</b>',
+      // suggests to show for empty queries, default: undefined (nothing)
+      emptyQuerySuggestions: {
+          "suggests":{
+              "Group Title 1":[
+                  {
+                    "id":"1",
+                    "name":"Mason Jar Lid Lights",
+                    "link":"//yoursite.com/articles/text1",
+                    "image":"//yoursite.com/articles/text1.jpg"
+                  },
+                  {
+                    "id":"2",
+                    "name":"Spreadable Beer",
+                    "link": "//yoursite.com/articles/text2",
+                    "image":"//yoursite.com/articles/text2.jpg"
+                  }
+              ],
+              "Another Group Title":[
+                  {
+                    "id":"3",
+                    "name":"Canon PowerShot SX710 HS",
+                    "link":"https://yoursite.com/articles/text3",
+                    "image":"https://yoursite.com/articles/text3.jpg"
+                  },
+              ]
+          }
+      },
+      // whether to show implementation errors, set to false for production
+      showErrors: true,
+      // if you only want to search within a certain content group, e.g. ['Articles']
+      includeContentGroups: [],
+      // if you only want to exclude a certain content group from the search results, e.g. ['Articles']
+      excludeContentGroups: [],
+      // a callback that is triggered when enter is pressed in the search box
+      // e.g. function(text) { $(this).closest('form').submit();}
+      // if you only want suggestions and the form should be submitted on enter
+      enterCallback: undefined,
+      // callback on what should happen when enter is pressed when a link is selected, undefined means the link will be followed
+      enterCallbackResult: undefined,
+      // a callback that is triggered when the user types in the search box
+      typeCallback: undefined,
+      // a callback that is triggered when the user leaves the search box
+      blurCallback: undefined,
+      // a callback that is triggered before the search is executed, e.g. to catch empty queries
+      preSearchCallback: undefined,
+      // a callback that is triggered before the search suggestion is executed, e.g. to catch empty queries
+      preSuggestCallback: undefined,
+      // a callback that is triggered after the search results have been populated
+      postSearchCallback: undefined,
+      // a callback that is triggered after the search is executed, e.g. to build your own result page from the response
+      searchResultCallback: undefined,
+      // a callback that is triggered after the initialization is complete
+      initCallback: undefined,
+      // external tracking libraries
+      externalTracking: {
+          // how to track, supported values: 'GA' (Google Analytics), 'GTM' (Google Tag Manager)
+          providers: ['GA'],
+          // callback before SERP is reported, SERP events aren't reported if this returns false
+          searchCallback: function(query) {
+              // do custom things here
+              return true;
+          }
+      },
+      // callback triggered after suggestion set is changed, takes boolean indicating whether suggestions are visible as argument
+      suggestChangeCallback: undefined,
+      // callback to handle search redirects, takes redirect url as parameter, window.location.href is changed by default
+      redirectCallback: undefined,
+      // accessibility options
+      accessibility: {
+          // whether to mark ss360 layer as main content of the page
+          isMainContent: false,
+          // heading level to start with in search result (default h2)
+          resultTopHeadingLevel: 2,
+          // heading level to use in search suggestions, for content group heading
+          suggestHeadingLevel: 4,
+          // invisible label to be used with screen readers when search field is focused, will only be used if value is not empty and there is no label element associated to the search field,default: 'Search'
+          searchFieldLabel: 'Search',
+          // text to announce @screen reader after search suggestions have been hidden
+          srSuggestionsHiddenText: 'Search suggestions are hidden',
+          // text to announce @screen reader if no suggestions are available
+          srNoSuggestionsText: 'No search suggestions',
+          // text to announce @screen reader after search suggestions have been shown, ##COUNT## will be replaced with the suggestion count
+          srSuggestionsCountText: '##COUNT## search suggestions shown',
+          // text to announce @screen reader after search suggestions have been shown
+          srOneSuggestionText: 'One search suggestion shown',
+          // text to announce @screen reader after search input is focused - describes keyboard controls
+          srSuggestBoxControlDescription: 'Use up and down arrows to select available result. Press enter to go to selected search result. Touch devices users can use touch and swipe gestures.'
+      },
+      // options for special mobile suggestions
+      specialMobileSuggest: {
+            // whether to show special mobile suggests
+            enabled: true,
+            // css breakpoint to show mobile suggests (max-width: breakpoint)
+            breakpoint: 768,
+            // placeholder for empty suggestions
+            placeholder: '',
+            // the special search box placeholder
+            searchBoxPlaceholder: '',
+            // additional html/text content to be shown above special mobile search field
+            customTopHtml: '',
+            // whether to animate special mobile transitions
+            animateTransitions: true,
+            // whether to resize search field when user scrolls special mobile suggests
+            resizeSearchBoxOnScroll: true
+      },
+      // whether to show search box in search result layover
+      showSearchBoxLayover: true,
+
+      /////////// experimental ///////////
+      // if true, a layer will be shown when the user focuses on the search input
+      inputFocusLayer: false,
+   };
+</script>
+<script src="https://sitesearch360.com/cdn/sitesearch360-v10.min.js"></script>
 </body>
 </html>
