@@ -12,18 +12,18 @@
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
-<link href="../p7mgm/p7MGM-03.css" rel="stylesheet" type="text/css" media="all">
-<link href="../p7affinity/p7metroplex-animate.css" rel="stylesheet" type="text/css">
+<link href="../../p7mgm/p7MGM-03.css" rel="stylesheet" type="text/css" media="all">
+<link href="../../p7affinity/p7metroplex-animate.css" rel="stylesheet" type="text/css">
 <link href="p7ap3/p7AP3-01.css" rel="stylesheet" type="text/css" media="all">
 <link href="p7ap3/p7ap3-columns.css" rel="stylesheet" type="text/css" media="all">
-<link href="../p7affinity/p7affinity-4.css" rel="stylesheet" type="text/css" media="all">
-<link href="../p7affinity/p7affinity_print.css" rel="stylesheet" type="text/css" media="print">
+<link href="../../p7affinity/p7affinity-4.css" rel="stylesheet" type="text/css" media="all">
+<link href="../../p7affinity/p7affinity_print.css" rel="stylesheet" type="text/css" media="print">
 	
 	<!-- InstanceBeginEditable name="moreCSS" -->
 <!-- InstanceEndEditable -->
 <script type="text/javascript" src="p7ap3/p7AP3scripts.js"></script>
-<script type="text/javascript" src="../p7ehc/p7EHCscripts.js"></script>
-<script type="text/javascript" src="../p7mgm/p7MGMscripts.js"></script>
+<script type="text/javascript" src="../../p7ehc/p7EHCscripts.js"></script>
+<script type="text/javascript" src="../../p7mgm/p7MGMscripts.js"></script>
 <!--[if lte IE 7]>
 <style>
 body {min-width: 1020px;}
@@ -75,56 +75,123 @@ $(function() {
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=396444913706132";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div id="logo"><img src="../images/logo.png" alt=""/></div>
+<div id="logo">
+  <div class="head-banner"><img src="../../images/logo.png" alt=""/></div>
+    
+    
+  <div style="width:auto; float:right;padding:0 20px 0 10px;">  <form name="jksearch" action="http://www.google.com/search" method="get" onSubmit="jksitesearch(this)">
+
+
+<input id="hiddenquery" type="hidden" name="q" />
+<input name="qfront" type="text" style="width: 30%,border-radius:8px; padding: 2px 5px 2px 5px; border-radius: 8px; color: rgba(143, 139, 139, 1);font-size: 13pt;" placeholder="Search Site" /> <input type="submit" value="Go" style="color: rgba(143, 139, 139, 1); padding: 2px; font-size: 13pt;"/><br />
+<div style="float:left;width:auto;padding-top:15px;">Google:<input name="se" type="radio" checked>  Yahoo:<input name="se" type="radio">  MSN:<input name="se" type="radio">
+</div>
+
+<script type="text/javascript">
+
+// All-in-one Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+// This notice must stay intact for use
+
+//Enter domain of site to search.
+var domainroot="www.mavensandmoguls.com"
+
+var searchaction=[ //form action for the 3 search engines
+"http://www.google.com/search",
+"http://search.yahoo.com/search",
+"http://search.msn.com/results.aspx"
+]
+
+var queryfieldname=["q","p","q"] //name of hidden query form for the 3 search engines
+
+function switchaction(cur, index){
+cur.form.action=searchaction[index]
+document.getElementById("hiddenquery").name=queryfieldname[index]
+}
+
+function jksitesearch(curobj){
+for (i=0; i< document.jksearch.se.length; i++){ //loop through radio to see which is checked
+if (document.jksearch.se[i].checked==true)
+switchaction(document.jksearch.se[i], i)
+}
+document.getElementById("hiddenquery").value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+
+</script>
+
+
+  </form>
+    
+    </div>
+  <div style="clear:both;"></div></div>
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <div id="p7MGM_1" class="p7MGM-03 p7MGM p7MGMdesign-time responsive menu-centered rounded transparent">
   <div id="p7MGMtb_1" class="mgm-toolbar closed"><a href="#" title="Hide/Show Menu">&equiv;</a></div>
   <ul id="p7MGMu_1" class="mgm-root-list">
-    <li class="mgm-root-item"><a id="p7MGMa1_1" class="mgm-root-item p7MGM_img" href="index.html"><img src="../images/home-icon.png" width="18" height="16" alt=""></a></li>
-    <li class="mgm-root-item"><a id="p7MGMa1_2" class="mgm-root-item" href="../about-us.html">About Us</a></li>
-    <li class="mgm-root-item"><a id="p7MGMa1_3" class="mgm-root-item" href="../services.html">Services</a></li>
-    <li class="mgm-root-item"><a id="p7MGMa1_4" class="mgm-root-item" href="../portfolio.html">Portfolio</a></li>
-    <li class="mgm-root-item mgm-trig"><a id="p7MGMa1_5" class="mgm-root-item mgm-trig" href="../articles.html">Articles</a></li>
-    <li class="mgm-root-item"><a id="p7MGMa1_6" class="mgm-root-item" href="../case-studies.html">Case Studies</a></li>
-    <li class="mgm-root-item"><a id="p7MGMa1_7" class="mgm-root-item" href="../speaker-programs.html">Speaker Programs</a></li>
-    <li class="mgm-root-item"><a id="p7MGMa1_8" class="mgm-root-item" href="../contact-us.html">Contact Us</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_1" class="mgm-root-item p7MGM_img" href="index.html"><img src="../../images/home-icon.png" width="18" height="16" alt=""></a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_2" class="mgm-root-item" href="../../about-us.html">About Us</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_3" class="mgm-root-item" href="../../services.html">Services</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_4" class="mgm-root-item" href="../../portfolio.html">Portfolio</a></li>
+    <li class="mgm-root-item mgm-trig"><a id="p7MGMa1_5" class="mgm-root-item mgm-trig" href="../../articles.html">Articles</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_6" class="mgm-root-item" href="../../case-studies.html">Case Studies</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_7" class="mgm-root-item" href="../../speaker-programs.html">Speaker Programs</a></li>
+    <li class="mgm-root-item"><a id="p7MGMa1_8" class="mgm-root-item" href="../../contact-us.html">Contact Us</a></li>
   </ul>
   <div id="p7MGMs1_5" class="mgm-mega-menu width100">
     <div class="mgm-mega-content">
       <div class="p7mgm-row mgm-col-20-20-20-20-20 col-sep">
         <div class="p7mgm-Col p7mgm-percent20">
           <div class="p7mgm-ColContent p7ehc-3">
-            <p><a href="../articles.html?apm3=#p7AP3t1_1">Articles - Section I</a></p>
+            <p><a href="../../articles.html?apm3=#p7AP3t1_1">Articles - Section I</a></p>
           </div>
         </div>
         <div class="p7mgm-Col p7mgm-percent20">
           <div class="p7mgm-ColContent p7ehc-3 border-left">
-            <p><a href="../articles.html?apm3=#p7AP3t1_2">Articles - Section II</a></p>
+            <p><a href="../../articles.html?apm3=#p7AP3t1_2">Articles - Section II</a></p>
           </div>
         </div>
         <div class="p7mgm-Col p7mgm-percent20">
           <div class="p7mgm-ColContent p7ehc-3 border-left">
-            <p><a href="../articles.html?apm3=#p7AP3t1_3">Articles - Section III</a></p>
+            <p><a href="../../articles.html?apm3=#p7AP3t1_3">Articles - Section III</a></p>
           </div>
         </div>
         <div class="p7mgm-Col p7mgm-percent20">
           <div class="p7mgm-ColContent p7ehc-3 border-left">
-            <p><a href="../articles.html?apm3=#p7AP3t1_4" >Articles - Section IV</a></p>
+            <p><a href="../../articles.html?apm3=#p7AP3t1_4" >Articles - Section IV</a></p>
           </div>
         </div>
 		      <div class="p7mgm-Col p7mgm-percent20">
           <div class="p7mgm-ColContent p7ehc-3 border-left">
-            <p><a href="../articles.html?apm3=#p7AP3t1_5">Articles - Section V</a></p>
+            <p><a href="../../articles.html?apm3=#p7AP3t1_5">Articles - Section V</a></p>
           </div>
         </div>
         <div class="p7mgm-Col p7mgm-percent20">
           <div class="p7mgm-ColContent p7ehc-3 border-left">
-            <p><a href="../articles.html?apm3=#p7AP3t1_6" >Book Contributions</a></p>
+            <p><a href="../../articles.html?apm3=#p7AP3t1_6" >Book Contributions</a></p>
           </div>
         </div>
      
         <div class="p7mgm-Col p7mgm-percent20">
           <div class="p7mgm-ColContent p7ehc-3 border-left">
-            <p><a href="../articles.html?apm3=#p7AP3t1_7">Awards</a></p>
+            <p><a href="../../articles.html?apm3=#p7AP3t1_7">Awards</a></p>
           </div>
         </div>
       </div>

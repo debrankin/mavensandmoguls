@@ -74,14 +74,56 @@ $(function() {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
     
-<div id="logo"><div class="head-banner"><img src="images/logo.png" alt=""/></div><input id="searchBox" type="text" placeholder="search" /><button onclick="return clickSearch(event);"></button><script>function clickSearch(clickevent) {
-    var e = jQuery.Event("keyup");
-    e.which = 13;
-    e.keyCode = 13;
-    $("#searchBox").trigger(e);
-    clickevent.stopPropagation();
-    return false;
-}</script><div style="clear:both;"></div></div>
+<div id="logo">
+  <div class="head-banner"><img src="images/logo.png" alt=""/></div>
+    
+    
+  <div style="width:auto; float:right;padding:0 20px 0 10px;">  <form name="jksearch" action="http://www.google.com/search" method="get" onSubmit="jksitesearch(this)">
+
+
+<input id="hiddenquery" type="hidden" name="q" />
+<input name="qfront" type="text" style="width: 30%,border-radius:8px; padding: 2px 5px 2px 5px; border-radius: 8px; color: rgba(143, 139, 139, 1);font-size: 13pt;" placeholder="Search Site" /> <input type="submit" value="Go" style="color: rgba(143, 139, 139, 1); padding: 2px; font-size: 13pt;"/><br />
+<div style="float:left;width:auto;padding-top:15px;">Google:<input name="se" type="radio" checked>  Yahoo:<input name="se" type="radio">  MSN:<input name="se" type="radio">
+</div>
+
+<script type="text/javascript">
+
+// All-in-one Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+// This notice must stay intact for use
+
+//Enter domain of site to search.
+var domainroot="www.mavensandmoguls.com"
+
+var searchaction=[ //form action for the 3 search engines
+"http://www.google.com/search",
+"http://search.yahoo.com/search",
+"http://search.msn.com/results.aspx"
+]
+
+var queryfieldname=["q","p","q"] //name of hidden query form for the 3 search engines
+
+function switchaction(cur, index){
+cur.form.action=searchaction[index]
+document.getElementById("hiddenquery").name=queryfieldname[index]
+}
+
+function jksitesearch(curobj){
+for (i=0; i< document.jksearch.se.length; i++){ //loop through radio to see which is checked
+if (document.jksearch.se[i].checked==true)
+switchaction(document.jksearch.se[i], i)
+}
+document.getElementById("hiddenquery").value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+
+</script>
+
+
+  </form>
+    
+    </div>
+  <div style="clear:both;"></div></div>
 <div id="p7MGM_1" class="p7MGM-03 p7MGM p7MGMdesign-time responsive menu-centered rounded transparent">
   <div id="p7MGMtb_1" class="mgm-toolbar closed"><a href="#" title="Hide/Show Menu">&equiv;</a></div>
   <ul id="p7MGMu_1" class="mgm-root-list">
