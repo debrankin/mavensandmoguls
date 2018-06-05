@@ -359,10 +359,7 @@ border-left: 1px solid rgba(0,0,0,.75);
 border-bottom: none; 
 }*/
 .boxed {
-	border-top: 5px solid rgba(254,253,253,1.00);
-	border-right: 5px solid rgba(254,253,253,1.00);
-	border-left: 5px solid rgba(254,253,253,1.00);
-	border-bottom: none;
+    border: 5px solid rgba(254,253,253,1.00);
 }
 .no-border {
 	border: none !important;
@@ -498,10 +495,9 @@ border-bottom: none;
 .affinity-row.sidebar-right .column-content,
 .affinity-row.sidebar-left .column-content,
 .affinity-row.thirds.full-height .column-content {
-	padding: 30px;
-	border-radius: 8px 8px 0px 0px;
-	margin-top: 15px;
-		
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 15px;
 }
 
 
